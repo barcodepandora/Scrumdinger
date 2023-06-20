@@ -34,6 +34,12 @@ struct MeetingView: View {
                 }
                 .accessibilityLabel("Next speaker")
             }
+            HStack {
+                Button(action: {}) {
+                    Label("Trying accesibility", systemImage: "forward")
+                }
+                .accessibilityLabel(Text("Skip song"))
+            }
         }
         .padding()
     }
